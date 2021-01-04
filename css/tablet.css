@@ -1,0 +1,9 @@
+.hero-container {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-areas: "badge title"
+                         "  description description "
+                         "countdown countdown "
+                         "form form";
+    gap: 10px;
+}   

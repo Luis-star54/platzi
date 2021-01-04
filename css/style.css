@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family:  'Lato', sans-serif;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background: #1c3643;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 55px;
+    align-items: center;
+    gap: 8px ;
+}
+.list-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    list-style: none;
+    
+}
+.list-container a{
+    padding: 5px;
+    cursor: pointer;
+    color: #fff ;
+    text-decoration: none;
+}
+.list-container .contacto:after{
+    content: " | ";
+    padding: 5px;
+    display: inline-block;
+}
+.nav-container button {
+    cursor: pointer;
+    padding-right: 10px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background:#95ca3e;
+    color: #fff;
+    /*sombra*/
+    box-shadow: 0 1px 1px 0 #58902d;
+}
+.nav-input-container {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    border-radius: 7px;
+}
+.nav-input-container input {
+    border: solid 1px #e9e9e9;
+    border-radius: 7px;
+    width: 180px;
+    height: 30px;
+    outline: none;
+}
+.nav-input-container a {
+    display: inline-block;
+    background-image: url("../assets/icon/buscar.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+
+}
+main {
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background:  #23475b;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: white;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 70px 1fr 320px;
+    grid-template-areas: "badge title form"
+                         ". description form"
+                         ". countdown form";
+    gap: 10px;
+}   
+.badge {
+    grid-area: badge;
+}
+.badge img {
+    max-width: 70px;
+}
+.title{
+    grid-area: title;
+    font-size: 3.6rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+.description {
+    grid-area: description;
+    font-size: 1.4rem;
+}
+.form{
+    grid-area: form;
+    text-align: center;
+    background: rgba(255, 255, 255, .9);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+.form p {
+    font-size: 2rem;
+    color: #3a3b3f;
+    margin-bottom: 1em;
+}
+.form-input input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px ;
+    font-size: 1.6rem;
+    border: 1px solid #dbdbe2;
+    border-radius: 5px;
+
+}
+.form button {
+    cursor: pointer;
+    background:  #98ca3f;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 5px solid #6d932b;
+    display: inline-block;
+    outline: none;
+}
+.countdown {
+    grid-area: countdown;
+}
+.countdown p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+.countdown span {
+    font-size: 3.3rem;
+}
+.countdown span:after {
+    content: " : ";
+    display: inline-block;
+    margin: 0 5px;
+}
+.countdown span:last-child:after{
+    display: none;
+}
