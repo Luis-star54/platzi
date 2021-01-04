@@ -136,7 +136,7 @@ main {
     font-size: 1.6rem;
     border: 1px solid #dbdbe2;
     border-radius: 5px;
-
+    outline: none;
 }
 .form button {
     cursor: pointer;
